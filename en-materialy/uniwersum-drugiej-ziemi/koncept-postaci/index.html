@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Koncept postaci</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/queries.css" />
+</head>
+<body>
+  <header>
+  <div>
+    <h1>Hubert Kniaź</h1>
+    <h2>
+      <span class="caret-cursor">
+        <h3>I</h3>
+      </span>
+      <span class="machine-font">maginarium</span>
+    </h2>
+  </div>
+
+  <div id="language-switcher" class="language-switcher-header">
+    <button id="btn-pl" class="language-button" aria-label="Polski">PL</button>
+    <button id="btn-en" class="language-button" aria-label="English">EN</button>
+  </div>
+</header>
+
+
+
+  <main class="page-grid" role="main">
+
+    
+<nav class="side-menu" aria-label="Main menu">
+  <ul>
+    <li>
+      <a href="/en-main" class="menu-link" tabindex="0">
+        Main page
+      </a>
+    </li>
+    <li>
+      <a href="/en-o-mnie" class="menu-link" tabindex="0">
+        About me
+      </a>
+    </li>
+    <li class="has-submenu" aria-haspopup="true">
+      <span class="menu-label" tabindex="0" role="button">
+        Materials
+      </span>
+      <ul class="submenu" aria-label="Materials submenu">
+        <li class="has-submenu" aria-haspopup="true">
+          <a href="/en-materialy/uniwersum-drugiej-ziemi" class="submenu-link" tabindex="0">
+            Second Earth Universe
+          </a>
+          <ul class="submenu" aria-label="Second Earth Universe submenu">
+            
+            
+              <li class="submenu-item">
+                <a href="/en-materialy/uniwersum-drugiej-ziemi/koncept-postaci" class="submenu-link" tabindex="0">
+                  <span>Character Concept</span>
+                </a>
+              </li>
+            
+              <li class="submenu-item">
+                <a href="/en-materialy/uniwersum-drugiej-ziemi/worldbuilding" class="submenu-link" tabindex="0">
+                  <span>Worldbuilding</span>
+                </a>
+              </li>
+            
+              <li class="submenu-item">
+                <a href="/en-materialy/uniwersum-drugiej-ziemi/gdd" class="submenu-link" tabindex="0">
+                  <span>GDD</span>
+                </a>
+              </li>
+            
+              <li class="submenu-item">
+                <a href="/en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml" class="submenu-link" tabindex="0">
+                  <span>Intro + Dialog + UML Diagram</span>
+                </a>
+              </li>
+            
+              <li class="submenu-item">
+                <a href="/en-materialy/uniwersum-drugiej-ziemi/quest" class="submenu-link" tabindex="0">
+                  <span>Quest</span>
+                </a>
+              </li>
+            
+          </ul>
+        </li>
+        <li class="submenu-item">
+          <a href="/en-materialy/scenariusz-sesji-rpg" class="submenu-link" tabindex="0">
+            <span>RPG Session Script</span>
+          </a>
+        </li>
+        <li class="submenu-item">
+          <a href="/en-materialy/opowiadanie" class="submenu-link" tabindex="0">
+            <span>Short Story</span>
+          </a>
+        </li>
+        <li class="submenu-item">
+          <a href="#" class="submenu-link disabled" tabindex="-1" aria-disabled="true">
+            <span>Twine Game (in progress)</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/en-kontakt" class="menu-link" tabindex="0">
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    <section class="content-main">
+
+             
+<div class="item-container"> 
+    <div class="item-card">
+        <h2>Cara<br/> O'Brien</h2>
+        <a href="#" class="pdf-link open-pdf cta-link" data-pdf="/pdf/Cara.pdf">Open</a>
+        <a href="https://drive.google.com/file/d/1anq7RTTU4sAPM0ApELx5tWBl_MD2o8W9/view?usp=drive_link" class="cta-link" target="_blank">Open PDF</a>
+    </div>
+
+    <div class="item-card">
+        <h2>William<br/> Walker</h2>
+        <a href="#" class="pdf-link open-pdf cta-link" data-pdf="/pdf/WilliamWalker.pdf">Open</a>
+        <a href="https://drive.google.com/file/d/13fyJldDO8T7E9e9f6nR-W8zsJu8RAhRW/view?usp=sharing" class="cta-link" target="_blank">Open PDF</a>
+    </div>
+</div>
+<ul class="normal-text" style="list-style: circle;">
+    <li>
+        Creating multidimensional characters with rich psychological backgrounds and consistent motivations.
+    </li>
+    <li>
+        Combining archetypes with unique, distinguishing elements.
+    </li>
+    <li>
+        Designing characters whose traits and values are balanced to appeal to different audience groups, avoiding extremes and cultural tensions.
+    </li>
+    <li>
+        Designing relationships that generate conflict, humor and tension, while also creating characters who complement each other with their skills and roles.
+    </li>
+    <li>
+        Using the <b>MILANOTE</b> platform to present ideas.
+    </li>
+</ul>
+    
+
+
+    </section>
+    <div class="side-right"></div>
+  </main>
+
+  <footer>
+    
+    <p>&copy; 2025 Hubert Kniaź. Website created by Jakub Stożek.</p>
+    
+</footer>
+
+
+  <div id="pdfModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="pdfViewerContainer"></div>
+  </div>
+</div>
+  <script src="/js/language-switcher.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  <script src="/js/pdf-viewer.js"></script>
+  <script src="/js/modal.js"></script>
+</body>
+</html>
