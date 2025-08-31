@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mapowanie ścieżek dla zmiany języka
   const pathMap = {
-    '/': '/en',
+    'Imaginarium/': 'Imaginarium/en',
     '/en': '/',
     '/main': '/en-main',
     '/en-main': '/main',
