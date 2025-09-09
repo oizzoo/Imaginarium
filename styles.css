@@ -332,8 +332,8 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .about-img {
   float: left;
-  height: 45%;
-  width: 35%;
+  height: 400px;
+  width: 400px;
   object-fit: cover;
   margin: 50px 50px 50px 50px;
   border-radius: 10px;
