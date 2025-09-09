@@ -331,11 +331,11 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 }
 
 .about-img {
-  display: block;
-  height: 250px;
-  width: 250px;
+  float: left;
+  height: 45%;
+  width: 35%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin: 50px 50px 50px 50px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.25s ease;
@@ -418,14 +418,6 @@ a:focus {
 
 .highlight-text br {
   line-height: 1.8;
-}
-
-.text-div {
-  display: flex;
-  overflow-y: auto;
-  justify-content: center;
-  height: 200px;
-  width: 100%;
 }
 
 .normal-text {
