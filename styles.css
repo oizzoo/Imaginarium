@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: url('images/notebook-bg.jpg') center/cover no-repeat fixed;
+  background: url('/images/notebook-bg.jpg') center/cover no-repeat fixed;
   width: 100vw;
   min-height: 80%;
   height: 80%;
@@ -51,10 +51,10 @@ body {
 }
 
 .About-P {
-  text-align: justify;
   margin: 0px 10px 10px 10px;
   padding: 10px;
   font-family: 'Arial', sans-serif;
+  text-align: justify;
 }
 
 h1 {
@@ -112,7 +112,6 @@ h2 {
   border-bottom-right-radius: 7px;
   padding: 0;
   margin: 0;
-  border-left: solid 1px #4a3a24;;
 }
 
 .video-banner {
@@ -125,11 +124,6 @@ h2 {
   border-bottom-right-radius: 7px;
   padding: 0;
   margin: 0;
-}
-
-.video-banner-bigger {
-  width: 100%;
-  object-fit: fill;
 }
 
 /* Menu boczne po lewej */
@@ -358,8 +352,8 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 .item-img {
   display: block;
   zoom: 75%;
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -419,8 +413,20 @@ a:focus {
   outline: none;
   cursor: pointer;
 }
+.main-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+.main-text p {
+  margin-bottom: 1.6em;
+}
 
 .highlight-text {
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.6;
@@ -429,13 +435,23 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.highlight-text br {
-  line-height: 1.8;
+.highlight-text,
+.normal-text-inline {
+  display: inline;
+}
+
+.text-div {
+  display: flex;
+  overflow-y: auto;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
 }
 
 .normal-text {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: #555;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'Arial', sans-serif;
 }
@@ -507,7 +523,7 @@ footer {
   gap: 2rem;
   max-width: 480px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 2rem;
   background: rgba(255, 255, 245, 0.6);
   border-radius: 14px;
@@ -564,17 +580,6 @@ footer {
   outline: none;
 }
 
-/* Kontener dwóch przycisków językowych */
-#language-switcher {
-  position: fixed;
-  top: 35px;
-  right: 200px;
-  z-index: 9999;
-  display: flex;
-  gap: 0.6rem;
-  user-select: none;
-}
-
 /* Styl przycisków językowych */
 .language-button {
   font-family: 'Special Elite', monospace, monospace;
@@ -586,7 +591,6 @@ footer {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  user-select: none;
 }
 
 .language-button:hover,
