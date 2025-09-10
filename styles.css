@@ -112,6 +112,7 @@ h2 {
   border-bottom-right-radius: 7px;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .video-banner {
@@ -131,6 +132,9 @@ h2 {
   width: 100%;
   object-fit: fill;
   border-left: solid 1px #4a3a24;;
+  height: auto;
+  position: sticky;
+  top: 20%;
 }
 
 /* Menu boczne po lewej */

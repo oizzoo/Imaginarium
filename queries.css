@@ -235,4 +235,7 @@
   .video-banner {
     display: none;
   }
+  .video-banner-bigger {
+    display: none;
+  }
 }
