@@ -61,25 +61,22 @@ window.addEventListener('scroll', () => {
   const bannerHeight = banner.offsetHeight;
   const viewportHeight = window.innerHeight;
 
-  let maxMove = wrapperHeight - bannerHeight; // ile baner może się przesunąć w kontenerze
+  const maxMove = wrapperHeight - bannerHeight;
 
-  // Jeśli kontener jest nad viewportem → baner u góry
   if (rect.bottom < 0) {
     banner.style.top = `${maxMove}px`;
     return;
   }
 
-  // Jeśli kontener jest całkowicie poniżej viewportu → baner u góry
   if (rect.top > viewportHeight) {
     banner.style.top = `0px`;
     return;
   }
 
-  // Obliczamy progres przewijania kontenera w viewport
-  let progress = (viewportHeight/2 - rect.top) / (wrapperHeight - bannerHeight);
+  let progress = (rect.top - viewportHeight / 2) / (viewportHeight / 2 + wrapperHeight - bannerHeight);
   progress = 1 - Math.min(Math.max(progress, 0), 1);
-
   const pos = progress * maxMove;
 
   banner.style.top = `${pos}px`;
 });
+
