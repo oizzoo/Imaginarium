@@ -126,6 +126,11 @@ h2 {
   margin: 0;
 }
 
+.video-banner-bigger {
+  width: 100%;
+  object-fit: fill;
+}
+
 /* Menu boczne po lewej */
 .side-menu {
   height: auto;
