@@ -113,6 +113,7 @@ h2 {
   padding: 0;
   margin: 0;
   position: relative;
+  border-left: solid 1px #4a3a24;;
 }
 
 .video-banner {
@@ -125,13 +126,11 @@ h2 {
   border-bottom-right-radius: 7px;
   padding: 0;
   margin: 0;
-  border-left: solid 1px #4a3a24;;
 }
 
 .video-banner-bigger {
   width: 100%;
   object-fit: fill;
-  border-left: solid 1px #4a3a24;;
   height: auto;
   position: sticky;
   top: 20%;
