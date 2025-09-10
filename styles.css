@@ -28,16 +28,22 @@ body {
 }
 
 /* Nagłówek */
-header {
-  padding: 2rem 0 1.2rem;
-  text-align: center;
-  user-select: none;
-  box-shadow: 0 2px 8px rgba(70, 56, 42, 0.05);
-  position: relative;
+.header-box {
+  display: flex;
 }
 
-header > div:first-child {
-  order: 1; 
+.header-box > * {
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 100px;
+}
+
+.header-box h1 {
+  text-align: center;
+}
+
+.middle-header h2 {
+  text-align: center;
 }
 
 .About-H1 {
