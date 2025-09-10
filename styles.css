@@ -28,7 +28,6 @@ body {
 }
 
 /* Nagłówek */
-/* Nagłówek */
 .header-box {
   display: flex;
 }
@@ -40,10 +39,6 @@ body {
 }
 
 .header-box h1 {
-  text-align: center;
-}
-
-.middle-header h2 {
   text-align: center;
 }
 
