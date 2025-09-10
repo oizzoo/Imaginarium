@@ -57,26 +57,8 @@ const banner = document.querySelector('.video-banner-bigger');
 
 window.addEventListener('scroll', () => {
   const rect = wrapper.getBoundingClientRect();
-  const wrapperHeight = wrapper.offsetHeight;
-  const bannerHeight = banner.offsetHeight;
-  const viewportHeight = window.innerHeight;
-
-  const maxMove = wrapperHeight - bannerHeight;
-
-  if (rect.bottom < 0) {
-    banner.style.top = `${maxMove}px`;
-    return;
-  }
-
-  if (rect.top > viewportHeight) {
-    banner.style.top = `0px`;
-    return;
-  }
-
-  let progress = (rect.top - viewportHeight / 2) / (viewportHeight / 2 + wrapperHeight - bannerHeight);
-  progress = 1 - Math.min(Math.max(progress, 0), 1);
-  const pos = progress * maxMove;
-
-  banner.style.top = `${pos}px`;
+  const max = wrapper.offsetHeight - banner.offsetHeight;
+  let pos = window.innerHeight / 2 - banner.offsetHeight / 2 - rect.top;
+  banner.style.top = `${Math.min(Math.max(pos, 0), max)}px`;
 });
 
