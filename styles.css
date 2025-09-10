@@ -442,10 +442,7 @@ a:focus {
 
 .text-div {
   display: flex;
-  overflow-y: auto;
   justify-content: center;
-  height: 200px;
-  width: 100%;
 }
 
 .normal-text {
