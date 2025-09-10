@@ -106,6 +106,7 @@ h2 {
 
 .side-right {
   position: relative;
+  overflow: hidden;
   height: auto;
   width: 10rem;
   background: rgba(255, 255, 245, 0.5);
@@ -130,11 +131,11 @@ h2 {
 
 .video-banner-bigger {
   position: absolute;
-  width: 100%;
-  object-fit: fill;
-  height: auto;
-  position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
   transition: top 0.2s linear;
 }
 
