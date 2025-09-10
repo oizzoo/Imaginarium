@@ -50,3 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+const wrapper = document.querySelector('.side-right');
+const banner = document.querySelector('.video-banner-bigger');
+
+window.addEventListener('scroll', () => {
+  const rect = wrapper.getBoundingClientRect();
+  const wrapperHeight = wrapper.offsetHeight;
+  const bannerHeight = banner.offsetHeight;
+
+  // progres scrolla w obrębie kontenera
+  let progress = (window.innerHeight - rect.top) / (window.innerHeight + wrapperHeight);
+  progress = Math.min(Math.max(progress, 0), 1);
+
+  // max przesunięcie banera
+  const maxMove = wrapperHeight - bannerHeight;
+  const pos = progress * maxMove;
+
+  banner.style.top = `${pos}px`;
+});
+
