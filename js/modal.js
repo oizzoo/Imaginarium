@@ -77,7 +77,7 @@ window.addEventListener('scroll', () => {
 
   // Obliczamy progres przewijania kontenera w viewport
   let progress = (viewportHeight/2 - rect.top) / (wrapperHeight - bannerHeight);
-  progress = Math.min(Math.max(progress, 0), 1);
+  progress = 1 - Math.min(Math.max(progress, 0), 1);
 
   const pos = progress * maxMove;
 
