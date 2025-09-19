@@ -353,12 +353,12 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 }
 
 .abilities-div ul.normal-text {
-  list-style-position: outside; /* domyślne położenie kropek na zewnątrz */
-  padding-left: 20px; /* standardowe wcięcie od lewej dla listy */
-  text-align: left; /* wyrównanie tekstu do lewej */
-  display: block; /* usuń flex jeśli jest gdzieś stosowany */
-  margin-left: 0; /* usuń jeśli jest margines */
-  align-items: normal; /* jeśli flexbox jest włączony w rodzicu */
+  list-style-position: outside;
+  padding-left: 20px;
+  text-align: left;
+  display: block;
+  margin-left: 0;
+  align-items: normal;
 }
 
 .abilities-div h2 {
