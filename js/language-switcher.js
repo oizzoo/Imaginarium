@@ -4,43 +4,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!btnPL || !btnEN) return;
 
-  const repoPrefix = '/Imaginarium';
-
   // Mapowanie ścieżek dla zmiany języka
   const pathMap = {
-    [repoPrefix + '/']: repoPrefix + '/en',
-    [repoPrefix + '/en']: repoPrefix + '/',
-    [repoPrefix + '/main']: repoPrefix + '/en-main',
-    [repoPrefix + '/en-main']: repoPrefix + '/main',
-    [repoPrefix + '/o-mnie']: repoPrefix + '/en-o-mnie',
-    [repoPrefix + '/en-o-mnie']: repoPrefix + '/o-mnie',
-    [repoPrefix + '/kontakt']: repoPrefix + '/en-kontakt',
-    [repoPrefix + '/en-kontakt']: repoPrefix + '/kontakt',
-    [repoPrefix + '/materialy/uniwersum-drugiej-ziemi']: repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi',
-    [repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi']: repoPrefix + '/materialy/uniwersum-drugiej-ziemi',
-    [repoPrefix + '/materialy/uniwersum-drugiej-ziemi/koncept-postaci']: repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/koncept-postaci',
-    [repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/koncept-postaci']: repoPrefix + '/materialy/uniwersum-drugiej-ziemi/koncept-postaci',
-    [repoPrefix + '/materialy/uniwersum-drugiej-ziemi/gdd']: repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/gdd',
-    [repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/gdd']: repoPrefix + '/materialy/uniwersum-drugiej-ziemi/gdd',
-    [repoPrefix + '/materialy/uniwersum-drugiej-ziemi/quest']: repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/quest',
-    [repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/quest']: repoPrefix + '/materialy/uniwersum-drugiej-ziemi/quest',
-    [repoPrefix + '/materialy/opowiadanie']: repoPrefix + '/en-materialy/opowiadanie',
-    [repoPrefix + '/en-materialy/opowiadanie']: repoPrefix + '/materialy/opowiadanie',
-    [repoPrefix + '/materialy/uniwersum-drugiej-ziemi/intro-dialog-uml']: repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml',
-    [repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml']: repoPrefix + '/materialy/uniwersum-drugiej-ziemi/intro-dialog-uml',
-    [repoPrefix + '/materialy/uniwersum-drugiej-ziemi/worldbuilding']: repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/worldbuilding',
-    [repoPrefix + '/en-materialy/uniwersum-drugiej-ziemi/worldbuilding']: repoPrefix + '/materialy/uniwersum-drugiej-ziemi/worldbuilding',
+    ['/']: '/en',
+    ['/en']: '/',
+    ['/main']: '/en-main',
+    ['/en-main']: '/main',
+    ['/o-mnie']: '/en-o-mnie',
+    ['/en-o-mnie']: '/o-mnie',
+    ['/kontakt']: '/en-kontakt',
+    ['/en-kontakt']: '/kontakt',
+    ['/materialy/uniwersum-drugiej-ziemi']: '/en-materialy/uniwersum-drugiej-ziemi',
+    ['/en-materialy/uniwersum-drugiej-ziemi']: '/materialy/uniwersum-drugiej-ziemi',
+    ['/materialy/uniwersum-drugiej-ziemi/koncept-postaci']: '/en-materialy/uniwersum-drugiej-ziemi/koncept-postaci',
+    ['/en-materialy/uniwersum-drugiej-ziemi/koncept-postaci']: '/materialy/uniwersum-drugiej-ziemi/koncept-postaci',
+    ['/materialy/uniwersum-drugiej-ziemi/gdd']: '/en-materialy/uniwersum-drugiej-ziemi/gdd',
+    ['/en-materialy/uniwersum-drugiej-ziemi/gdd']: '/materialy/uniwersum-drugiej-ziemi/gdd',
+    ['/materialy/uniwersum-drugiej-ziemi/quest']: '/en-materialy/uniwersum-drugiej-ziemi/quest',
+    ['/en-materialy/uniwersum-drugiej-ziemi/quest']: '/materialy/uniwersum-drugiej-ziemi/quest',
+    ['/materialy/opowiadanie']: '/en-materialy/opowiadanie',
+    ['/en-materialy/opowiadanie']: '/materialy/opowiadanie',
+    ['/materialy/uniwersum-drugiej-ziemi/intro-dialog-uml']: '/en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml',
+    ['/en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml']: '/materialy/uniwersum-drugiej-ziemi/intro-dialog-uml',
+    ['/materialy/uniwersum-drugiej-ziemi/worldbuilding']: '/en-materialy/uniwersum-drugiej-ziemi/worldbuilding',
+    ['/en-materialy/uniwersum-drugiej-ziemi/worldbuilding']: '/materialy/uniwersum-drugiej-ziemi/worldbuilding',
   };
 
   btnPL.addEventListener('click', () => {
     const currentPath = window.location.pathname;
-    const newPath = pathMap[currentPath] || (repoPrefix + '/'); // Domyślnie wraca do strony głównej PL
+    const newPath = pathMap[currentPath] || ('/'); // Domyślnie wraca do strony głównej PL
     window.location.pathname = newPath;
   });
 
   btnEN.addEventListener('click', () => {
     const currentPath = window.location.pathname;
-    const newPath = pathMap[currentPath] || (repoPrefix + '/en'); // Domyślnie wraca do strony głównej EN
+    const newPath = pathMap[currentPath] || ('/en'); // Domyślnie wraca do strony głównej EN
     window.location.pathname = newPath;
   });
 
