@@ -307,6 +307,10 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   z-index: 1;
 }
 
+.flex-content {
+  display: flex;
+}
+
 .content-main ul {
   list-style: none;
   padding: 0;
