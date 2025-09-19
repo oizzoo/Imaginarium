@@ -303,8 +303,6 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   box-shadow: 0 3px 10px rgba(120, 90, 40, 0.06);
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 245, 0.5);
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   z-index: 1;
 }
@@ -326,9 +324,31 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .item-container {
   display: flex;
-  justify-content: center; /* wyśrodkowanie poziome */
-  gap: 5rem; /* lub mniejszy odstęp, jeśli jest za duży */
+  margin: 25px 25px;
+  align-items: stretch;
+  float: right;
+  gap: 5rem;
   animation: fadeInUp 0.8s ease forwards;
+}
+
+.abilities-div {
+  float: left;
+  margin: 25px 25px;
+  width: auto;
+  text-align: left;
+}
+
+.abilities-div ul.normal-text {
+  list-style-position: outside; /* domyślne położenie kropek na zewnątrz */
+  padding-left: 20px; /* standardowe wcięcie od lewej dla listy */
+  text-align: left; /* wyrównanie tekstu do lewej */
+  display: block; /* usuń flex jeśli jest gdzieś stosowany */
+  margin-left: 0; /* usuń jeśli jest margines */
+  align-items: normal; /* jeśli flexbox jest włączony w rodzicu */
+}
+
+.abilities-div h2 {
+  text-align: center;
 }
 
 .item-card {
@@ -340,6 +360,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   align-items: center;
   text-align: center;
   animation: cardAppear 0.6s ease forwards;
+  min-height: 300px;
 }
 
 .item-card:nth-child(1) {
@@ -348,6 +369,12 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .item-card:nth-child(2) {
   animation-delay: 0.4s;
+}
+
+.item-card .item-img {
+  margin-top: auto;
+  max-height: 150px;
+  width: auto;
 }
 
 .about-img {
@@ -364,9 +391,9 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .item-img {
   display: block;
-  zoom: 75%;
-  height: 150px;
-  width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
   margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
