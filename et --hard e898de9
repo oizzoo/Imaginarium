@@ -1,0 +1,72 @@
+[33me898de9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull: Fast-forward
+[33m77c6010[m HEAD@{1}: reset: moving to HEAD~1
+[33me898de9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: commit: Improve appearance of images and lists in CSS and HTML
+[33m77c6010[m HEAD@{3}: commit: Changing text on website as per Hubert's request
+[33m260089f[m HEAD@{4}: pull: Fast-forward
+[33mea4fa1e[m HEAD@{5}: reset: moving to HEAD
+[33mea4fa1e[m HEAD@{6}: commit: Changing class for video banner on worldbuilding subpage
+[33m8f699b4[m HEAD@{7}: commit: .
+[33ma9fc92f[m HEAD@{8}: commit: .
+[33mf8f1ad5[m HEAD@{9}: commit: Making the banner to start at the top instead of the bottom of the viewport
+[33mdd9b501[m HEAD@{10}: commit: Adding javascript for the banner to float with the website scrolling
+[33m4ce90ab[m HEAD@{11}: commit: Adding js and css to making video banner float with the website scroll
+[33m72a56ed[m HEAD@{12}: commit: Deleting border from video banner and adding it to the side-right container instead
+[33m3cd43db[m HEAD@{13}: commit: Adding styles to video banner to make it sticky
+[33mca9f21d[m HEAD@{14}: commit: Adding left border to the video banner div
+[33m2ac6ed8[m HEAD@{15}: commit: Changing text on the main page as per Hubert's request
+[33m1723c08[m HEAD@{16}: commit: Re-adding videobanner css
+[33m23e6e0a[m HEAD@{17}: commit: Disabling scrolling through text-div to allow the whole page to be scrollable
+[33m1698d68[m HEAD@{18}: commit: rebuild pages
+[33m2ad8940[m HEAD@{19}: commit: rebuild pages
+[33mc2dfdab[m HEAD@{20}: commit: Fix header in secon earth universum
+[33mfd3b155[m HEAD@{21}: commit: Fix header in all pages
+[33m5e2d3a1[m HEAD@{22}: commit: Changing routing for iamges to display correctly
+[33m2fdf108[m HEAD@{23}: commit: .
+[33m1eb4bbd[m HEAD@{24}: commit: Fix routing for header
+[33mba2947d[m HEAD@{25}: commit: Add styles to header to display correctly
+[33md28081c[m HEAD@{26}: commit: Changing header layout as per Hubert's request
+[33m8c2799f[m HEAD@{27}: commit: Changing style of video banner to stop stretching on specific pages
+[33m0496e33[m HEAD@{28}: commit: changing class for video banner for second earth universe
+[33mb0a86a7[m HEAD@{29}: commit: Changing the banner to not scale on the whole div
+[33m0697017[m HEAD@{30}: commit: Fixing image size for the better display purposes
+[33m9feac3b[m HEAD@{31}: commit: changing about-me section layout
+[33m420cd84[m HEAD@{32}: commit: Adjusting about-me image sizing
+[33m26bf125[m HEAD@{33}: commit: Adjusting about-me image sizing
+[33mbde2e1c[m HEAD@{34}: commit: Changing about me section layout
+[33m6d6df71[m HEAD@{35}: commit: Fixing routing for github pages
+[33mb745979[m HEAD@{36}: commit: Fixing routing for github pages
+[33meba32cc[m HEAD@{37}: commit: Fixing routing for koncept-postaci page
+[33m6788d57[m HEAD@{38}: commit: Fixing pathing for intro dialog uml page
+[33me7e1b50[m HEAD@{39}: commit: Fixing routing for the GDD page
+[33m9ae6646[m HEAD@{40}: commit: Fixing div composition on the about me page
+[33m2dd1151[m HEAD@{41}: commit: Fix routing for github pages
+[33mf4a073d[m HEAD@{42}: commit: Fix routing for github pages
+[33m259032d[m HEAD@{43}: commit: Fixing routing for github pages
+[33m58e0d9a[m HEAD@{44}: commit: Fixing routing for GitHub Pages
+[33mf11e5fe[m HEAD@{45}: commit: Fixing routing for GitHub Pages
+[33m9afebc6[m HEAD@{46}: commit: 2
+[33m7f7a811[m HEAD@{47}: commit: 1
+[33mceb1138[m HEAD@{48}: commit: Fixing routing for githubpages
+[33mae2f220[m HEAD@{49}: commit: Fixing routing for githubpages
+[33m6d93ee4[m HEAD@{50}: commit: Fixing routing for github pages
+[33m65ea09f[m HEAD@{51}: commit: Fixing routing for github pages
+[33m28787a8[m HEAD@{52}: commit: fixing routing for github pages
+[33m1ddb28d[m HEAD@{53}: commit: Fixing routing for github pages
+[33me2e6e6f[m HEAD@{54}: commit: Fixing routing for github pages
+[33mcd44d42[m HEAD@{55}: commit: Fixing routing for github pages
+[33m27d3337[m HEAD@{56}: commit: Fixing routing for githubPages
+[33mddb2773[m HEAD@{57}: commit: Fixing routing for githubPages
+[33md266cc4[m HEAD@{58}: commit: Fixing routing for github Pages
+[33m1915334[m HEAD@{59}: commit: Fixing routing for github Pages
+[33me720607[m HEAD@{60}: commit: Fixing routing for github Pages
+[33m4d78cd3[m HEAD@{61}: commit: Fixing routing for github Pages
+[33mfcbbe3b[m HEAD@{62}: commit: Fixing routing for github Pages
+[33m1a7a5cc[m HEAD@{63}: commit: Fixing routing for github Pages
+[33ma07963b[m HEAD@{64}: commit: Fixing routing for github pages
+[33m4914abe[m HEAD@{65}: commit: Fixing routing for css to display properly
+[33mc1fa0d5[m HEAD@{66}: commit: Fixing routing for css to display properly
+[33ma93807f[m HEAD@{67}: commit: Fixing routing so that css is displayed on pages
+[33ma7830c8[m HEAD@{68}: commit: Fixin routing to css files
+[33md7381c0[m HEAD@{69}: Branch: renamed refs/heads/main to refs/heads/main
+[33md7381c0[m HEAD@{71}: Branch: renamed refs/heads/master to refs/heads/main
+[33md7381c0[m HEAD@{73}: commit (initial): first commit
