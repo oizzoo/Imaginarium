@@ -339,6 +339,11 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   animation: fadeInUp 0.8s ease forwards;
 }
 
+.item-container > .item-card:only-child {
+  margin-left: 35%;
+  justify-content: flex-start;
+}
+
 .abilities-div {
   float: left;
   margin: 25px 25px;
