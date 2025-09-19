@@ -310,7 +310,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 .flex-content {
   display: flex;
   width: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .content-main ul {
@@ -350,6 +350,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   float: left;
   margin: 25px 25px;
   width: auto;
+  max-width: 50%;
   text-align: left;
 }
 
