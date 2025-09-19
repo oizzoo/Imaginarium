@@ -309,6 +309,8 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .flex-content {
   display: flex;
+  width: auto;
+  justify-content: space-around;
 }
 
 .content-main ul {
@@ -340,7 +342,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 }
 
 .item-container > .item-card:only-child {
-  margin-left: 35%;
+  margin-left: auto;
   justify-content: flex-start;
 }
 
