@@ -388,7 +388,8 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 .item-card .item-img {
   margin-top: auto;
   max-height: 150px;
-  width: auto;
+  width: 150px;
+  object-fit: cover;
 }
 
 .about-img {
