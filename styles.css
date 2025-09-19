@@ -309,8 +309,8 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .flex-content {
   display: flex;
-  width: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin: 25px 25px 25px 25px;
 }
 
 .content-main ul {
@@ -334,23 +334,21 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .item-container {
   display: flex;
-  margin: 25px 25px;
   align-items: stretch;
   float: right;
+  justify-content: center;
   gap: 5rem;
   animation: fadeInUp 0.8s ease forwards;
+  width: 50%;
 }
 
 .item-container > .item-card:only-child {
-  margin-left: auto;
-  justify-content: flex-start;
+  width: 50%;
 }
 
 .abilities-div {
   float: left;
-  margin: 25px 25px;
   width: auto;
-  max-width: 50%;
   text-align: left;
 }
 
@@ -499,6 +497,7 @@ a:focus {
 .text-div {
   display: flex;
   justify-content: center;
+  width: 50%;
 }
 
 .normal-text {
