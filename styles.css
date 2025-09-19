@@ -289,10 +289,10 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   pointer-events: none;
 }
 
-/* Treść strony po prawej */
+/* Treść strony na środku */
 .content-main {
-  display: flex;
-  overflow-y: auto;
+  display: block;
+  overflow-y: none;
   flex: 1;
   padding: 2rem 0;
   font-size: 1.16rem;
@@ -320,6 +320,10 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 .content-main ul li {
   font-size: 1.1rem;
+}
+
+.content-main h1 {
+  text-align: center;
 }
 
 .item-container {
