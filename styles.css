@@ -406,7 +406,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   margin-top: auto;
   height: 150px;
   width: 150px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .about-img {
