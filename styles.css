@@ -313,6 +313,23 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   margin: 25px 25px 25px 25px;
 }
 
+.flex-content-sesja {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 25px 25px 25px;
+  gap: 50px;
+}
+
+.flex-content-sesja .item-card {
+  flex: 1 1 200px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  box-sizing: border-box;
+  max-width: 250px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+}
+
 .content-main ul {
   list-style: none;
   padding: 0;
