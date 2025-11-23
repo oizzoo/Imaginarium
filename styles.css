@@ -599,7 +599,6 @@ footer {
   font-size: clamp(0.85rem, 1vw, 1.08rem);
   font-family: 'Merriweather', 'Georgia', serif;
   color: #534025;
-  background: rgba(255, 255, 245, 0.5);
   margin-top: auto;
 }
 
@@ -668,9 +667,6 @@ footer {
   vertical-align: middle;
 }
 
-.wtd {
-  text-align: center;
-}
 
 @keyframes blink-caret {
   0%, 50% { opacity: 1; }
