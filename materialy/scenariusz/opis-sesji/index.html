@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quest</title>
+  <title>Opis Sesji</title>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../../styles.css" />
   <link rel="stylesheet" href="../../../queries.css" />
@@ -30,9 +30,8 @@
 </div>
 </header>
 
-  <main class="page-grid" role="main">
+<main class="page-grid" role="main">
 
-    
 <nav class="side-menu" aria-label="Główne menu">
   <ul>
     <li>
@@ -125,84 +124,45 @@
 </nav>
 
 <section class="content-main">
-<div class="flex-content">
-  <div class="text-div">
-    <div class="abilities-div">
-      <h2>Umiejętności:</h2>
-      <ul class="normal-text" style="list-style: circle;">
-          <li>
-              Projektowanie questów i struktury misji (wyzwalacze, etapy, cele, zakończenie).
-          </li>
-          <li>
-              Tworzenie i rozwijanie fabuły głównej oraz wątków pobocznych.
-          </li>
-          <li>
-              Integracja narracji z mechanikami gry.
-          </li>
-          <li>
-              Projektowanie wielościeżkowych scenariuszy (różne perspektywy gracza, warianty rozgrywki).
-          </li>
-          <li>
-              Pisanie dialogów i scenek fabularnych wspierających gameplay.
-          </li>
-          <li>
-              Worldbuilding i projektowanie spójnego świata gry.
-          </li>
-          <li>
-              Tworzenie przejrzystej dokumentacji.
-          </li>
-          <li>
-              Naturalne wplatanie osiągnięć powiązanych z fabułą.
-          </li>
-          <li>
-              Prezentowanie questów za pomocą diagramów UML wykorzystująć platformę <b>MIRO.</b>
-          </li>
-      </ul>
+  <h1>Opis Sesji</h1>
+  
+  <div class="flex-content">
+    <div class="item-container">
+      <div class="item-card">
+        <h2>Skrócony<br/>Opis</h2>
+        <a href="#" class="cta-link disabled" aria-disabled="true">Wkrótce</a>
+      </div>
+
+      <div class="item-card">
+        <h2>Pełny<br/>Opis</h2>
+        <a href="#" class="pdf-link open-pdf cta-link" data-pdf="../../../pdf/OpisSesji.pdf">Otwórz</a>
+      </div>
     </div>
   </div>
-              
-  <div class="item-container">
-    <div class="item-card">
-        <h2>Zadanie</h2>
-        <img src="../../../images/quest.jpg" alt="gdd" class="item-img"/>
-        <a href="#" class="pdf-link open-pdf cta-link " data-pdf="../../../pdf/SecondEarthQuest.pdf">Otwórz</a>
-        <a href="https://drive.google.com/file/d/1xCttXA6LZWvZ60INvuS11MUtCoMz9aDf/view?usp=drive_link" class="cta-link" target="_blank">Otwórz PDF</a>
-    </div>
+</section>
 
-    <div class="item-card">
-        <h2>Diagram</h2>
-        <img src="../../../images/diagram.jpg" alt="Quests diagram" class="item-img"/>
-        <a href="#" class="pdf-link open-pdf cta-link" data-pdf="../../../pdf/diagram.pdf">Otwórz</a>
-        <a href="https://drive.google.com/file/d/1sAAjlKNumQFslOudenAMM5Oj0iFYqtt_/view?usp=sharing" class="cta-link" target="_blank">Otwórz PDF</a>
-    </div>
-  </div>
-
+<div class="side-right">
+  <video class="video-banner" autoplay muted loop>
+    <source src="../../../video/BANER_PION_PL.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
-    </section>
-    <div class="side-right">
-      <video class="video-banner" autoplay muted loop>
-          <source src="../../../video/BANER_PION_PL.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-    </div>
-  </main>
+</main>
 
-  <footer>
-    
-    <p>&copy; 2025 Hubert Kniaź. Strona stworzona przez Jakuba Stożka. <a href="https://oizzoo.github.io/" >https://oizzoo.github.io/</a></p>
-    
+<footer>
+  <p>&copy; 2025 Hubert Kniaź. Strona stworzona przez Jakuba Stożka. <a href="https://oizzoo.github.io/">https://oizzoo.github.io/</a></p>
 </footer>
 
-
-  <div id="pdfModal" class="modal">
+<div id="pdfModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <div id="pdfViewerContainer"></div>
   </div>
 </div>
-  <script src="../../../js/language-switcher.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-  <script src="../../../js/pdf-viewer.js"></script>
-  <script src="../../../js/modal.js"></script>
+
+<script src="../../../js/language-switcher.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script src="../../../js/pdf-viewer.js"></script>
+<script src="../../../js/modal.js"></script>
 </body>
 </html>
