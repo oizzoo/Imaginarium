@@ -333,6 +333,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
   justify-content: space-between;
   align-items: center;
   min-height: 150px;
+  min-width: 200px;
   padding: 1.5rem 1rem;
   background-color: rgba(255, 255, 245, 0.6);
   border-radius: 8px;
