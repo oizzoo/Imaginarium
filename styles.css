@@ -328,13 +328,35 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 }
 
 .flex-content-sesja .item-card {
-  flex: 1 1 200px;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  max-height: 50px;
-  max-width: 200px;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+  padding: 1.5rem 1rem;
+  background-color: rgba(255, 255, 245, 0.6);
+  border-radius: 8px;
+  border: 2px solid #d3c8b6;
+  box-shadow: 0 2px 8px rgba(70, 56, 42, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flex-content-sesja .item-card:hover {
+  box-shadow: 0 4px 12px rgba(70, 56, 42, 0.15);
+}
+
+.flex-content-sesja .item-card h2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  color: #4a3a24;
+}
+
+.flex-content-sesja .item-card .cta-link {
+  margin-top: auto;
 }
 
 /* Text Sections */
