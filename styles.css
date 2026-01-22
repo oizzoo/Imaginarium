@@ -258,7 +258,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 }
 
 .content-main h1 {
-  font-size: clamp(1rem, 3vw, 3.5rem);
+  font-size: clamp(1rem, 1.5vw, 3.5rem);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -418,7 +418,7 @@ nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
 
 /* About Section */
 .About-H1 {
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1.5vw, 1rem);
 }
 
 .About-P {
