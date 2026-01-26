@@ -20,7 +20,7 @@
    ============================================ */
 @media (max-width: 1920px) {
   html {
-    font-size: 100%;
+    font-size: 100%; 
   }
   
   .content-main {
@@ -226,8 +226,7 @@
     margin-top: 0.5rem;
   }
 
-  nav.side-menu > ul > li.has-submenu:hover > ul.submenu,
-  nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
+  nav.side-menu > ul > li.has-submenu.submenu-open > ul.submenu {
     display: block;
   }
 

@@ -1,5 +1,8 @@
 // js/menu.js
 document.addEventListener('DOMContentLoaded', () => {
+    // Sprawdź czy to mobile
+  const isMobile = window.innerWidth <= 768;
+
   // Znajdź element "Materiały"
   const materialyItem = document.querySelector('.side-menu > ul > li.has-submenu');
   
@@ -17,12 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
       menuLabel.appendChild(arrow);
       
       // Sprawdź localStorage czy submenu było otwarte
-      const wasOpen = localStorage.getItem('materialy-open') === 'true';
-      if (wasOpen) {
-        materialyItem.classList.add('submenu-open');
-        arrow.style.transform = 'rotate(-90deg)'; // Obrót w dół
-      }
-      
+      if (!isMobile) {
+        const wasOpen = localStorage.getItem('materialy-open') === 'true';
+        if (wasOpen) {
+            materialyItem.classList.add('submenu-open');
+            arrow.style.transform = 'rotate(-90deg)'; // Obrót w dół
+         }
+      }  
       // Klik w cały element "Materiały" (tekst + strzałka) = toggle
       menuLabel.addEventListener('click', function(e) {
         e.preventDefault();
@@ -33,10 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Obróć strzałkę
         if (materialyItem.classList.contains('submenu-open')) {
           arrow.style.transform = 'rotate(-90deg)'; // W dół
-          localStorage.setItem('materialy-open', 'true'); // Zapamiętaj stan
+          if (!isMobile) {
+             localStorage.setItem('materialy-open', 'true'); // Zapamiętaj stan
+          }
         } else {
           arrow.style.transform = 'rotate(0deg)'; // W lewo
-          localStorage.removeItem('materialy-open'); // Usuń stan
+          if (!isMobile) {
+             localStorage.removeItem('materialy-open'); // Usuń stan
+          }
         }
       });
     }
