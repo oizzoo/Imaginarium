@@ -193,7 +193,7 @@ body {
   outline: none;
 }
 
-/* Submenu */
+/* Submenu - domyślnie ukryte */
 nav.side-menu > ul > li.has-submenu > ul.submenu {
   display: none;
   margin-left: 0;
@@ -203,8 +203,8 @@ nav.side-menu > ul > li.has-submenu > ul.submenu {
   margin-top: 0.3rem;
 }
 
-nav.side-menu > ul > li.has-submenu:hover > ul.submenu,
-nav.side-menu > ul > li.has-submenu:focus-within > ul.submenu {
+/* Pokaż submenu gdy ma klasę .submenu-open */
+nav.side-menu > ul > li.has-submenu.submenu-open > ul.submenu {
   display: block;
 }
 
