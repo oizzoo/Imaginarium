@@ -1,7 +1,7 @@
 // js/menu.js
 document.addEventListener('DOMContentLoaded', () => {
     // Sprawdź czy to mobile
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 1024;
 
   // Znajdź element "Materiały"
   const materialyItem = document.querySelector('.side-menu > ul > li.has-submenu');
