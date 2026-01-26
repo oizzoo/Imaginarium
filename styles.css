@@ -44,6 +44,11 @@ body {
   border-radius: 5px;
 }
 
+.left-side-header {
+  flex: 0 0 auto;
+  min-width: 120px;
+}
+
 .middle-header {
   flex: 1;
   text-align: center;
@@ -85,6 +90,12 @@ body {
 #language-switcher {
   display: flex;
   gap: 0.5rem;
+  margin-right: 15px;
+}
+
+.language-switcher-header {
+  flex: 0 0 auto;
+  min-width: 120px;
 }
 
 .language-button {
