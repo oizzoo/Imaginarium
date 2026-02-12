@@ -45,7 +45,7 @@ body {
 }
 
 .left-side-header {
-  flex: 0 0 auto;
+  flex: 1 1 1;
   min-width: 120px;
 }
 
@@ -459,6 +459,66 @@ nav.side-menu > ul > li.has-submenu.submenu-open > ul.submenu {
   display: block;
   max-height: 150px;
   max-width: 150px;
+  height: auto;
+  width: auto;
+  margin: auto 0 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
+}
+
+.item-img-worldbuilding {
+  display: block;
+  max-height: 250px;
+  max-width: 250px;
+  height: auto;
+  width: auto;
+  margin: 20px 0 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
+}
+
+.item-img-character {
+  display: block;
+  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+  margin: 0 0 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
+}
+
+.item-img-quest {
+  display: block;
+  max-height: 250px;
+  max-width: 250px;
+  height: auto;
+  width: auto;
+  margin: 0 0 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
+}
+
+.item-img-intro {
+  display: block;
+  max-height: 200px;
+  max-width: 200px;
+  height: auto;
+  width: auto;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
+}
+
+.item-img-opowiadanie {
+  display: block;
+  max-height: 400px;
+  max-width: 400px;
   height: auto;
   width: auto;
   margin: auto 0 1rem 0;

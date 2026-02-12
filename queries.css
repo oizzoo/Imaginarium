@@ -51,6 +51,16 @@
   .side-right {
     width: 9rem;
   }
+
+  .item-img-character {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.item-img-quest {
+    max-height: 150px;
+    max-width: 150px;
+}
 }
 
 /* ============================================
