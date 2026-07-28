@@ -533,27 +533,27 @@ nav.side-menu > ul > li.has-submenu.submenu-open > ul.submenu {
 }
 
 .flex-content-sesja .item-card.bg-zalaczniki {
-  background-image: url('../images/background-notes-hd.png');
+  background-image: url('images/background-notes-hd.png');
 }
 
 /* Wioska */
 .flex-content-sesja .item-card.bg-wioska {
-  background-image: url('../images/wioska.png');
+  background-image: url('images/wioska.png');
 }
 
 /* Leśniczówka */
 .flex-content-sesja .item-card.bg-lesniczowka {
-  background-image: url('../images/lesniczowka.png');
+  background-image: url('images/lesniczowka.png');
 }
 
 /* Mapa 1 */
 .flex-content-sesja .item-card.bg-mapa1 {
-  background-image: url('../images/mapa1.png');
+  background-image: url('images/mapa1.png');
 }
 
 /* Mapa 2 */
 .flex-content-sesja .item-card.bg-mapa2 {
-  background-image: url('../images/mapa2.png');
+  background-image: url('images/mapa2.png');
 }
 
 /* About Section */
