@@ -51,14 +51,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-const wrapper = document.querySelector('.side-right');
-const banner = document.querySelector('.video-banner-bigger');
-
-window.addEventListener('scroll', () => {
-  const rect = wrapper.getBoundingClientRect();
-  const max = wrapper.offsetHeight - banner.offsetHeight;
-  let pos = window.innerHeight / 2 - banner.offsetHeight / 2 - rect.top;
-  banner.style.top = `${Math.min(Math.max(pos, 0), max)}px`;
-});
-

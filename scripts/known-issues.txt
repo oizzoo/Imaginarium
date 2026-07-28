@@ -1,0 +1,29 @@
+# Znane, jeszcze nienaprawione problemy — baseline dla scripts/check-site.py.
+# Kazda linia to fragment wpisu "plik -> problem". Dopasowanie po substringu.
+# Gdy PR naprawi problem, checker oznaczy wpis jako nieaktualny — wtedy usun linie.
+#
+# --- PR-C (naprawa wersji EN, decyzja 2026-07-28: EN zostaje, fallback na PL) ---
+en-404/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-404/index.html -> niedomkniete <video>
+en-kontakt/index.html -> brak pliku (lub zla wielkosc liter): ../en-materialy/scenariusz-sesji-rpg/
+en-kontakt/index.html -> niedomkniete <video>
+en-main/index.html -> brak pliku (lub zla wielkosc liter): ../en-materialy/scenariusz-sesji-rpg
+en-main/index.html -> brak pliku (lub zla wielkosc liter): /rpg
+en-materialy/opowiadanie/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-materialy/opowiadanie/index.html -> brak pliku (lub zla wielkosc liter): /images/Opowiadanie.jpg
+en-materialy/uniwersum-drugiej-ziemi/gdd/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-materialy/uniwersum-drugiej-ziemi/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-materialy/uniwersum-drugiej-ziemi/index.html -> brak pliku (lub zla wielkosc liter): ../en-materialy/opowiadanie/index.html
+en-materialy/uniwersum-drugiej-ziemi/index.html -> niedomkniete <video>
+en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-materialy/uniwersum-drugiej-ziemi/koncept-postaci/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-materialy/uniwersum-drugiej-ziemi/quest/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-materialy/uniwersum-drugiej-ziemi/worldbuilding/index.html -> brak pliku (lub zla wielkosc liter): /en-materialy/scenariusz-sesji-rpg
+en-o-mnie/index.html -> brak pliku (lub zla wielkosc liter): ../en-materialy/scenariusz-sesji-rpg
+en-o-mnie/index.html -> niedomkniete <video>
+#
+# --- Tresc do dostarczenia (Hubert/Kuba) ---
+materialy/scenariusz/opis-sesji/index.html -> brak pliku (lub zla wielkosc liter): WKLEJ_TUTAJ_LINK_DO_GOOGLE_DRIVE
+#
+# --- Link w komentarzu HTML (nieszkodliwy, do sprzatniecia w PR-C) ---
+materialy/uniwersum-drugiej-ziemi/index.html -> brak pliku (lub zla wielkosc liter): /materialy/scenariusz-sesji-rpg
