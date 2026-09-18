@@ -193,6 +193,12 @@ body {
   outline: none;
 }
 
+nav.side-menu a:is(.menu-link, .submenu-link):focus-visible,
+nav.side-menu > ul > li.has-submenu > span.menu-label:focus-visible {
+  outline: 2px solid #4a3a24;
+  outline-offset: 2px;
+}
+
 /* Submenu - domyślnie ukryte */
 nav.side-menu > ul > li.has-submenu > ul.submenu {
   display: none;
@@ -533,7 +539,7 @@ nav.side-menu > ul > li.has-submenu.submenu-open > ul.submenu {
 }
 
 .flex-content-sesja .item-card.bg-zalaczniki {
-  background-image: url('images/background-notes-hd.png');
+  background-image: url('images/notes.webp');
 }
 
 /* Wioska */
@@ -611,7 +617,8 @@ a:focus {
   outline: none;
 }
 
-a.disabled {
+a.disabled,
+.cta-link[aria-disabled="true"] {
   color: #a5946a;
   cursor: not-allowed;
   opacity: 0.6;

@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 KNOWN_ISSUES_FILE = ROOT / "scripts" / "known-issues.txt"
 
 ATTR_RE = re.compile(
-    r"""(?:href|src|data-pdf|poster)\s*=\s*["']([^"']+)["']""", re.IGNORECASE
+    r"""(?:href|src|data-src|data-pdf|poster)\s*=\s*["']([^"']+)["']""", re.IGNORECASE
 )
 CSS_URL_RE = re.compile(r"""url\(\s*['"]?([^'")]+)['"]?\s*\)""", re.IGNORECASE)
 EXTERNAL_RE = re.compile(r"^(?:[a-z][a-z0-9+.-]*:|//|#)", re.IGNORECASE)

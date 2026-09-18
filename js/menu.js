@@ -27,12 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
             arrow.style.transform = 'rotate(-90deg)'; // Obrót w dół
          }
       }  
+      menuLabel.setAttribute('aria-expanded', String(materialyItem.classList.contains('submenu-open')));
+      menuLabel.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          menuLabel.click();
+        }
+      });
       // Klik w cały element "Materiały" (tekst + strzałka) = toggle
       menuLabel.addEventListener('click', function(e) {
         e.preventDefault();
         
         // Toggle submenu
         materialyItem.classList.toggle('submenu-open');
+        menuLabel.setAttribute('aria-expanded', String(materialyItem.classList.contains('submenu-open')));
         
         // Obróć strzałkę
         if (materialyItem.classList.contains('submenu-open')) {

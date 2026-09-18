@@ -88,12 +88,14 @@
           </ul>
         </li>
         <li class="submenu-item">
-          <a href="/en-materialy/scenariusz-sesji-rpg" class="submenu-link" tabindex="0">
+          <!-- EN-FALLBACK: czeka na tłumaczenie -->
+
+          <a href="/materialy/scenariusz/index.html" hreflang="pl" class="submenu-link" tabindex="0">
             <span>RPG Session Script</span>
           </a>
         </li>
         <li class="submenu-item">
-          <a href="../en-materialy/opowiadanie/index.html" class="submenu-link" tabindex="0">
+          <a href="/en-materialy/opowiadanie/index.html" class="submenu-link" tabindex="0">
             <span>Short Story</span>
           </a>
         </li>
@@ -139,8 +141,10 @@
                  <a class="cta-link" href="/en-materialy/uniwersum-drugiej-ziemi/gdd/index.html">GDD</a>
                  <a class="cta-link" href="/en-materialy/uniwersum-drugiej-ziemi/intro-dialog-uml/index.html">Intro/Dialog/Diag</a>
                  <a class="cta-link" href="/en-materialy/uniwersum-drugiej-ziemi/quest/index.html">Quest</a>
-                 <a class="cta-link" href="/en-materialy/scenariusz-sesji-rpg">RPG Session Script</a>
-                 <a class="cta-link" href="../en-materialy/opowiadanie/index.html">Short Story</a>
+                 <!-- EN-FALLBACK: czeka na tłumaczenie -->
+
+                 <a class="cta-link" href="/materialy/scenariusz/index.html" hreflang="pl">RPG Session Script</a>
+                 <a class="cta-link" href="/en-materialy/opowiadanie/index.html">Short Story</a>
                  <a class="submenu-link disabled" disabled="disabled">TWINE Game (In Development)</a>
         </div>
         
@@ -148,9 +152,10 @@
     </section>
     <div class="side-right">
       
-<video class="video-banner" autoplay muted loop preload="none" poster="../../video/BANER_PION_EN_poster.jpg">
-    <source src="../../video/BANER_PION_EN.mp4" type="video/mp4">
+<video class="video-banner" muted loop playsinline preload="none" poster="../../video/BANER_PION_EN_poster.jpg">
+    <source data-src="../../video/BANER_PION_EN.mp4" type="video/mp4">
     Your browser does not support the video tag.
+  </video>
 
     </div>
   </main>
@@ -163,5 +168,7 @@
 
 
   <script src="../../js/language-switcher.js"></script>
+  <script src="../../js/menu.js"></script>
+  <script src="../../js/banner.js"></script>
 </body>
 </html>
