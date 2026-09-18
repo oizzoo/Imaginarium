@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   btnPL.addEventListener('click', () => {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
     const newPath = pathMap[currentPath] || ('/'); // Domyślnie wraca do strony głównej PL
     window.location.pathname = newPath;
   });
 
   btnEN.addEventListener('click', () => {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
     const newPath = pathMap[currentPath] || ('/en'); // Domyślnie wraca do strony głównej EN
     window.location.pathname = newPath;
   });
