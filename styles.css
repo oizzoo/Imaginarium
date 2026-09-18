@@ -793,10 +793,14 @@ footer {
 
 #pdfViewerContainer {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   text-align: center;
   -webkit-overflow-scrolling: touch;
 }
+
+.modal-content > .cta-link { align-self: flex-start; margin-right: 5rem; }
+.modal :focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
 #pdfViewerContainer canvas {
   display: block;
