@@ -29,15 +29,14 @@ ATTR_RE = re.compile(
 CSS_URL_RE = re.compile(r"""url\(\s*['"]?([^'")]+)['"]?\s*\)""", re.IGNORECASE)
 EXTERNAL_RE = re.compile(r"^(?:[a-z][a-z0-9+.-]*:|//|#)", re.IGNORECASE)
 
-SKIP_DIRS = {".git", ".github", "node_modules", "scripts"}
+SKIP_DIRS = {".git", ".github", "node_modules", "scripts", "site", "_site"}
 
 
 def repo_files():
-    for path in sorted(ROOT.rglob("*")):
-        if any(part in SKIP_DIRS for part in path.parts):
-            continue
-        if path.is_file():
-            yield path
+    for directory, folders, files in ROOT.walk():
+        folders[:] = sorted(name for name in folders if name not in SKIP_DIRS)
+        for name in sorted(files):
+            yield directory / name
 
 
 def exists_exact_case(rel_path: str) -> bool:

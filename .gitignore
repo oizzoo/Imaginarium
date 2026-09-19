@@ -1,1 +1,8 @@
 update-menu.js
+/site/node_modules/
+/site/.next/
+/site/next-env.d.ts
+/site/out/
+/site/*.tsbuildinfo
+/site/.env*
+/_site/
