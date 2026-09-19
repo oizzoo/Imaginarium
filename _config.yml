@@ -1,0 +1,4 @@
+# Keep the migration workspace outside the legacy GitHub Pages output.
+exclude:
+  - site
+  - node_modules
